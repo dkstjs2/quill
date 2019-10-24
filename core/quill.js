@@ -56,6 +56,8 @@ class Quill {
         globalRegistry.register(target);
       }
       if (typeof target.register === 'function') {
+
+        console.log('register:', target)
         target.register(globalRegistry);
       }
     }
